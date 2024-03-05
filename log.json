@@ -1,0 +1,49 @@
+{
+  "stores": [
+    {
+      "name": "suvinil",
+      "store": "0008",
+      "products": [
+        {
+          "crawlingStart": 1709506334326,
+          "crawlingEnd": 1709506348512,
+          "id": "a727f437-d89d-4818-bd30-ddc5236fa109",
+          "finalStatus": "D"
+        }
+      ],
+      "crawlingStart": 1709506334325,
+      "crawlingEnd": 1709506348512
+    },
+    {
+      "name": "madeira_madeira",
+      "store": "0009",
+      "products": [
+        {
+          "crawlingStart": 1709506348512,
+          "crawlingEnd": 1709506364361,
+          "id": "bde67389-69ad-4f2c-9c53-5010710f12c8",
+          "finalStatus": "D"
+        }
+      ],
+      "crawlingStart": 1709506348512,
+      "crawlingEnd": 1709506364361
+    },
+    {
+      "name": "magazineluiza",
+      "store": "0010",
+      "products": [
+        {
+          "crawlingStart": 1709506364361,
+          "crawlingEnd": 1709506377762,
+          "id": "a727f437-d89d-4818-bd30-ddc5236fa109",
+          "finalStatus": "D"
+        }
+      ],
+      "crawlingStart": 1709506364361,
+      "crawlingEnd": 1709506377762
+    }
+  ],
+  "startedAt": "2024-03-03T22:52:14.321Z",
+  "crawlingStart": 1709506334323,
+  "crawlingEnd": 1709506377950
+}

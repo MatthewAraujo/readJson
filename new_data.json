@@ -1,0 +1,38 @@
+{
+  "stores": [
+    {
+      "name": "suvinil",
+      "store": "0008",
+      "products": [
+        {
+          "id": "a727f437-d89d-4818-bd30-ddc5236fa109",
+          "difference": 14186
+        }
+      ],
+      "difference": 14187
+    },
+    {
+      "name": "madeira_madeira",
+      "store": "0009",
+      "products": [
+        {
+          "id": "bde67389-69ad-4f2c-9c53-5010710f12c8",
+          "difference": 15849
+        }
+      ],
+      "difference": 15849
+    },
+    {
+      "name": "magazineluiza",
+      "store": "0010",
+      "products": [
+        {
+          "id": "a727f437-d89d-4818-bd30-ddc5236fa109",
+          "difference": 13401
+        }
+      ],
+      "difference": 13401
+    }
+  ],
+  "difference": 43627
+}
