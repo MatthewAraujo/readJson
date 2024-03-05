@@ -1,3 +1,4 @@
+from datetime import datetime, timedelta
 # Função para calcular a média dos elementos em uma lista
 def calcular_media(lst):
   sum_all = 0
@@ -99,3 +100,13 @@ def calcular_moda(lst):
       most_freq = [most_freq, key]
 
   return most_freq
+
+
+
+
+def milliseconds_to_hours(milliseconds):
+
+  seconds = milliseconds / 1000
+  hours = seconds / 3600
+  hours = timedelta(hours=hours)  # Reuse the existing function
+  return str(hours).split(".")[0]  # Split and return only the hour part

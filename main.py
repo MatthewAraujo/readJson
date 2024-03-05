@@ -1,7 +1,7 @@
 import json
 
 # Read the JSON file
-with open('log.json', 'r') as file:
+with open('log_hoje.json', 'r') as file:
   data = file.read()
 
 
@@ -31,6 +31,7 @@ for store in data_dict['stores']:
     diff = product['crawlingEnd'] - product['crawlingStart']
     product_info = {
       "id": product['id'],
+      "finalStatus": product['finalStatus'],
       "difference": diff
     }
     new_store['products'].append(product_info)
@@ -43,56 +44,75 @@ with open('new_data.json', 'w') as file:
   json.dump(new_data, file, indent=2) 
 
 
-# Tempo total por loja
 with open('new_data.json', 'r') as file:
   data = file.read()
 
 data_dict = json.loads(data)
 
-# for store in data_dict['stores']:
-  # print(f"Tempo total para a loja {store['name']} foi de {store['difference']} segundos")
+# Tempo total por loja
+# b. Tempo médio e variância por loja
+# c. Tempo médio e variância dos produtos
+# d. Tempo médio e variância para produtos que tiveram sucesso na coleta de preço
+# e. Tempo médio e variância para o restante dos produtos
 
-# Tempo medio e variancia por loja
-from utils import calcular_media, calcular_variancia
+relatorio = {
+  'tempo_total_por_loja': 0,
+  'tempo_medio_por_loja': 0,
+  'variancia_por_loja': 0,
+  'tempo_medio_por_produto': 0,
+  'variancia_por_produto': 0,
+  'tempo_medio_por_produto_sucesso': 0,
+  'variancia_por_produto_sucesso': 0,
+  'tempo_medio_por_produto_resto': 0,
+  'variancia_por_produto_resto': 0,
+}
 
-lojas = {}
+from utils import calcular_media, calcular_variancia, milliseconds_to_hours
+
+# Tempo total por loja
+arr = [] 
 for store in data_dict['stores']:
-  lojas[store['name']] = store['difference']
-  media = calcular_media(list(lojas.values()))
-  variancia = calcular_variancia(list(lojas.values()))
+  arr.append(store['difference'])
 
-# Tempo medio e variancia por produto 
-produtos = {}
+relatorio['tempo_total_por_loja'] = milliseconds_to_hours(sum(arr))
+
+# tempo medio por loja
+relatorio['tempo_medio_por_loja'] = milliseconds_to_hours(sum(arr) / len(arr))
+
+# variancia por loja
+relatorio['variancia_por_loja'] = milliseconds_to_hours(calcular_variancia(arr))
+
+
+# Tempo medio e variancia por produto
+arr = []
 for store in data_dict['stores']:
   for product in store['products']:
-    if product['id'] not in produtos:
-      produtos[product['id']] = []
-    produtos[product['id']].append(product['difference'])
+    arr.append(product['difference'])
 
-lista_valores = [valor for sublist in list(produtos.values()) for valor in sublist]
-
-media = calcular_media(lista_valores)
-variancia = calcular_variancia(lista_valores)
-  
+relatorio['tempo_medio_por_produto'] = milliseconds_to_hours(calcular_media(arr))
+relatorio['variancia_por_produto'] = milliseconds_to_hours(calcular_variancia(arr))
 
 
-# # Tempo medio e variancia para os produtos que tiveram sucesso
-lojas_sucesso = {}
+# Tempo medio e variancia por produto sucesso
+arr = []
 for store in data_dict['stores']:
-  print(store)
-  if store['finalStatus'] != 'D':
-    print(f"Tempo médio para a loja {store['name']} foi de {media} segundos")
-    lojas_sucesso[store['name']] = store['difference']
-    media = calcular_media(list(lojas_sucesso.values()))
-    variancia = calcular_variancia(list(lojas_sucesso.values()))
+  for product in store['products']:
+    if product['finalStatus'] == 'D':
+      arr.append(product['difference'])
 
+relatorio['tempo_medio_por_produto_sucesso'] = milliseconds_to_hours(calcular_media(arr))
+relatorio['variancia_por_produto_sucesso'] = milliseconds_to_hours(calcular_variancia(arr))
 
-
-# tempo medio e variancia para o resto dos produtos
+# Tempo medio e variancia por produto resto
+arr = []
 for store in data_dict['stores']:
   for product in store['products']:
     if product['finalStatus'] != 'D':
-      print(f"Tempo médio para o produto {product['id']} foi de {media} segundos")
-      print(f"Variancia para o produto {product['id']} foi de {variancia} segundos")
-      print("")
+      arr.append(product['difference'])
 
+relatorio['tempo_medio_por_produto_resto'] = milliseconds_to_hours(calcular_media(arr))
+relatorio['variancia_por_produto_resto'] = milliseconds_to_hours(calcular_variancia(arr))
+
+
+with open('relatorio.json', 'w') as file:
+  json.dump(relatorio, file, indent=2)
