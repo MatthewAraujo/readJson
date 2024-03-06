@@ -2892,6 +2892,268 @@
     }
   },
   "tempo_medio_por_produto_sucesso_e_variancia": {
+    "ee4c023a-f8e0-4f5f-9808-3faa687c6342": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "0b84f847-3562-4110-9640-29b3880a2707": {
+      "media": "00:00:48",
+      "variancia": "353:50:11"
+    },
+    "9adebd2b-faa9-4c84-a804-1dd5be1ddf01": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "e3e81eaf-d608-40bf-8fd1-a8df21e0b8ea": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "e1379436-0710-4e67-b9f2-808c1d37e042": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "e9ea396d-5b53-4db6-a632-b4f0fa731fa3": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "24a3fe52-62b5-4d29-86be-ae58b9026fc7": {
+      "media": "00:00:15",
+      "variancia": "00:00:00"
+    },
+    "b89a6c89-2f7e-4d09-9ec8-73913a382892": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "1db3c9ad-8979-4773-a1a8-3589b3ecf27f": {
+      "media": "00:00:08",
+      "variancia": "05:32:56"
+    },
+    "7e40dbdc-4779-4241-b110-206af0cbc315": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "82fd0b7b-8125-4902-9cb6-81f3f5648ab5": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "e713438b-0415-40c0-bc82-dcc22032d879": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "767ed0cd-a645-46c6-b8b0-3546c1bd4cf4": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "3c8433e6-de58-4c2a-91a7-d24ab479902b": {
+      "media": "00:00:14",
+      "variancia": "00:00:00"
+    },
+    "944a728b-5dbf-4178-af41-edb389318bca": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "e2560b49-116e-4f87-80f7-aafbff134b65": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "e1babb26-183d-4539-b309-1357e865a3ea": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "b93a5559-6873-4f20-a84c-4b22376f7915": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "dc1a840b-3235-4eab-830a-43cb36976d3c": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "2f7e5120-78c5-495d-ad0f-499524702f8f": {
+      "media": "00:00:14",
+      "variancia": "00:00:00"
+    },
+    "5e23a9b2-8a83-4923-9196-d0c683d87ac2": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "9db96a8e-da1d-45e2-a198-3f4d273d811b": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "872e564b-b992-4088-9f97-1a69a80bb946": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "db1d98d6-a8cf-4102-a3c6-b43faf1785c0": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "4e3aa795-e5bc-4c58-adc8-35c86520cba8": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "acc6f319-98bb-46b5-b144-7f37fdc1d729": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "4172372a-5511-4379-b62f-2212d83f204d": {
+      "media": "00:00:11",
+      "variancia": "00:00:00"
+    },
+    "2252ec59-57bd-4cb8-990d-204fe4732e69": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "dfba53ef-c5a9-41b1-aac0-5d8e3b6e3095": {
+      "media": "00:00:11",
+      "variancia": "00:00:00"
+    },
+    "a8c4b956-9344-4bf3-9c9f-6250f6487d9a": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "ff9d87a8-3b4b-491d-b76c-423862821a1a": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "394d7333-9560-4116-a93b-cb93a9d3a5c5": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "66d0e1d3-392c-4cca-989b-1218bfdf5331": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "c61be768-d29e-45fe-9f5b-0c7f1303fefe": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "e4ea0391-30fa-44d3-8180-d946e4cbe471": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "4861615b-cc1a-4fdf-9ace-03b01fae29d3": {
+      "media": "00:00:14",
+      "variancia": "00:00:00"
+    },
+    "cf2a836a-50fd-4fd6-96e2-ab273f973b84": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "c471c199-2544-4589-ba55-836237f0c7c0": {
+      "media": "00:00:14",
+      "variancia": "00:00:00"
+    },
+    "8bfa3f1e-b468-48aa-a8dc-0dab8c7d8ca0": {
+      "media": "00:00:15",
+      "variancia": "00:00:00"
+    },
+    "8c97df51-4b32-4591-96e1-805ba8a711bf": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "08464fc7-5a87-424e-9405-d643f9007798": {
+      "media": "00:00:16",
+      "variancia": "00:00:00"
+    },
+    "782f3975-4431-4fa7-bf5e-7fe75e5cc59f": {
+      "media": "00:00:18",
+      "variancia": "00:00:00"
+    },
+    "81663f89-410a-42dd-9bf1-e2cfde66fde4": {
+      "media": "00:00:17",
+      "variancia": "00:00:00"
+    },
+    "d41721dd-f898-433c-928f-d7d29a0d6a6d": {
+      "media": "00:00:15",
+      "variancia": "00:00:00"
+    },
+    "74bce4a7-1bf4-4877-87b0-83578543c363": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "d25ea6da-3d70-4e3b-af00-49fbcd09796c": {
+      "media": "00:00:25",
+      "variancia": "00:00:00"
+    },
+    "dccaa03c-600d-44f1-8876-f25c44f5a011": {
+      "media": "00:00:29",
+      "variancia": "00:00:00"
+    },
+    "ff29f828-0418-4267-9b58-63aec8a083ff": {
+      "media": "00:00:04",
+      "variancia": "00:00:00"
+    },
+    "d2d71f85-e619-45e9-93ea-17c55c406452": {
+      "media": "00:00:03",
+      "variancia": "00:00:00"
+    },
+    "b82c7477-21ee-4e1a-aaf3-a70940bf5315": {
+      "media": "00:00:04",
+      "variancia": "00:00:00"
+    },
+    "eff8c4e7-65a9-4103-af9e-db02afd8bda6": {
+      "media": "00:00:03",
+      "variancia": "00:00:00"
+    },
+    "7435b428-7e34-48ba-a9a3-3652c2cdd5c6": {
+      "media": "00:00:05",
+      "variancia": "00:00:00"
+    },
+    "bd84031f-6c53-4dd7-98e5-f16e471f870c": {
+      "media": "00:00:04",
+      "variancia": "00:00:00"
+    },
+    "3675d042-d7e0-49e2-8488-02ad7771d163": {
+      "media": "00:00:05",
+      "variancia": "00:00:00"
+    },
+    "e6d4c75f-8fe3-42b9-85b8-6b6fa58701d8": {
+      "media": "00:01:00",
+      "variancia": "00:00:00"
+    },
+    "c742c5fd-0b05-4f93-ab8c-8e0c50c140a4": {
+      "media": "00:00:15",
+      "variancia": "00:00:00"
+    },
+    "51f5dbd9-985a-4527-923c-3b50030d87bc": {
+      "media": "00:00:22",
+      "variancia": "00:00:00"
+    },
+    "49a06e1b-55ad-4bfc-8cbf-9622913f3c31": {
+      "media": "00:00:35",
+      "variancia": "00:00:00"
+    },
+    "dd3837a6-4983-4ad1-b695-e21c90ee12ef": {
+      "media": "00:01:10",
+      "variancia": "00:00:00"
+    },
+    "9afd5cea-6fba-43fc-b0b6-c8ba37b66f11": {
+      "media": "00:01:20",
+      "variancia": "00:00:00"
+    },
+    "74863bd9-cb9d-44f9-8545-2fa41f99ae23": {
+      "media": "00:00:13",
+      "variancia": "00:00:00"
+    },
+    "c9693867-9397-4af3-8b4e-e55e1d11dbe3": {
+      "media": "00:00:50",
+      "variancia": "00:00:00"
+    },
+    "5fe11766-9f6a-435c-85c0-1eb733a4481b": {
+      "media": "00:00:41",
+      "variancia": "00:00:00"
+    },
+    "5e64757c-4d8d-48d4-a203-11cc047076f4": {
+      "media": "00:00:12",
+      "variancia": "00:00:00"
+    },
+    "e11f2886-0629-41bb-aad1-062ed63ecab0": {
+      "media": "00:00:28",
+      "variancia": "00:00:00"
+    }
+  },
+  "tempo_medio_por_produto_resto_e_variancia": {
     "11beed5d-5009-4591-bc46-24099d6d3eef": {
       "media": "00:00:04",
       "variancia": "00:00:00"
@@ -5644,6 +5906,5 @@
       "media": "00:00:30",
       "variancia": "00:00:00"
     }
-  },
-  "tempo_medio_por_produto_resto_e_variancia": []
+  }
 }

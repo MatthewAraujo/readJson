@@ -10,7 +10,7 @@ let new_data = {
 };
 
 // Calculate difference for the entire process
-const diff = dataDict['crawlingEnd'] - dataDict['crawlingStart'];
+const diff = dataDict['crawlingEnd'] - dataDict['cr awlingStart'];
 new_data['difference'] = diff;
 
 // Iterate through stores
@@ -147,6 +147,7 @@ for (const [key, value] of Object.entries(tempoMedioPorProdutoSucessoEVariancia)
 
 relatorio['tempo_medio_por_produto_sucesso_e_variancia'] = tempoMedioPorProdutoSucessoEVariancia;
 
+
 // Tempo medio e variancia dos restantes dos produtos
 const tempoMedioPorProdutoRestoEVariancia = {};
 for (const store of dataDictNew.stores) {
@@ -168,7 +169,7 @@ for (const [key, value] of Object.entries(tempoMedioPorProdutoRestoEVariancia)) 
   };
 }
 
-relatorio['tempo_medio_por_produto_sucesso_e_variancia'] = tempoMedioPorProdutoRestoEVariancia;
+relatorio['tempo_medio_por_produto_resto_e_variancia'] = tempoMedioPorProdutoRestoEVariancia;
 function createTimestamp() {
   const now = new Date();
   const year = now.getFullYear();
@@ -184,7 +185,7 @@ function createTimestamp() {
 const timestamp = createTimestamp().replace(' ', `-`)
 
 // Write the report to a JSON file
-fs.writeFileSync(`relatorio-${timestamp}.json`, JSON.stringify(relatorio, null, 2));
+fs.writeFileSync(`./relatorios/relatorio-${timestamp}.json`, JSON.stringify(relatorio, null, 2));
 
 
 function convertRelatorioToCSV(relatorioData) {
@@ -215,7 +216,7 @@ function convertRelatorioToCSV(relatorioData) {
 }
 
 // Read the JSON data from relatorio.json
-fs.readFile(`relatorio-${timestamp}.json`, 'utf8', (err, data) => {
+fs.readFile(`./relatorios/relatorio-${timestamp}.json`, 'utf8', (err, data) => {
   if (err) {
     console.error("Error reading JSON file:", err);
     return;
