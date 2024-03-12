@@ -185,5 +185,4 @@ function createTimestamp() {
 const timestamp = createTimestamp().replace(' ', `-`)
 
 // Write the report to a JSON file
-fs.writeFileSync(`./relatorios/relatorio3.json`, JSON.stringify(relatorio, null, 2));
-
+fs.writeFileSync(`./relatorios/relatorio-${timestamp}.json`, JSON.stringify(relatorio, null, 2));
