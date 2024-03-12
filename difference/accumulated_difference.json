@@ -1,11 +1,26 @@
 {
-  "difference": {},
+  "difference": {
+    "38d7dbea-4ff5-4940-8a37-b62fd5177827": {
+      "store": "cec",
+      "products": [
+        {
+          "id": "11beed5d-5009-4591-bc46-24099d6d3eef",
+          "difference": 15386429021843
+        }
+      ]
+    },
+    "ad6e28b5-2a73-47a5-8280-006e5ffdb6ce": [],
+    "c8655e47-279e-41b5-8481-140ebd8fb852": [],
+    "54814d90-7133-4689-bf55-4475996d282e": [],
+    "ceb0e63a-e344-4fb8-b726-56c9c9c28682": [],
+    "179be4f5-1ee9-4c39-ae83-32eaa449f8dd": []
+  },
   "38d7dbea-4ff5-4940-8a37-b62fd5177827": {
     "store": "cec",
     "products": [
       {
         "id": "11beed5d-5009-4591-bc46-24099d6d3eef",
-        "status": "X"
+        "status": "S"
       },
       {
         "id": "05b0033e-c8f3-44ca-82bd-400a59fae670",

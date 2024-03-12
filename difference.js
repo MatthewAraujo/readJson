@@ -30,6 +30,30 @@ function compareAndAccumulateDifference(file1, file2, accumulatedDifference) {
             "status": product1.finalStatus
           });
         }
+        if (matchingProduct2 && product1.crawlingEnd && product1.crawlingStart && matchingProduct2.crawlingEnd && matchingProduct2.crawlingStart) {
+          const diff1 = product1.crawlingEnd - product1.crawlingStart;
+          const diff2 = matchingProduct2.crawlingEnd - matchingProduct2.crawlingStart;
+          const diff = diff2 - diff1;
+
+          if (diff !== 0) {
+            if (!accumulatedDifference.difference[storeId]) {
+              accumulatedDifference.difference[storeId] = {
+                "store": store1.name,
+                "products": []
+              };
+              accumulatedDifference.difference[storeId].products.push({
+                "id": productId,
+                "difference": diff
+              });
+            }
+
+          }
+        }
+
+        if (!accumulatedDifference.difference[storeId]) {
+          accumulatedDifference.difference[storeId] = [];
+        }
+
       });
     }
   });
