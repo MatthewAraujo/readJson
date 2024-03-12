@@ -1,34 +1,58 @@
 {
-  "difference": {
-    "38d7dbea-4ff5-4940-8a37-b62fd5177827": {
-      "store": "cec",
-      "products": [
-        {
-          "id": "11beed5d-5009-4591-bc46-24099d6d3eef",
-          "difference": 15386429021843
-        }
-      ]
-    },
-    "ad6e28b5-2a73-47a5-8280-006e5ffdb6ce": [],
-    "c8655e47-279e-41b5-8481-140ebd8fb852": [],
-    "54814d90-7133-4689-bf55-4475996d282e": [],
-    "ceb0e63a-e344-4fb8-b726-56c9c9c28682": [],
-    "179be4f5-1ee9-4c39-ae83-32eaa449f8dd": []
-  },
+  "difference": {},
   "38d7dbea-4ff5-4940-8a37-b62fd5177827": {
     "store": "cec",
     "products": [
       {
         "id": "11beed5d-5009-4591-bc46-24099d6d3eef",
-        "status": "S"
+        "status": [
+          "S",
+          "T"
+        ],
+        "difference": -15386429021843
       },
       {
         "id": "05b0033e-c8f3-44ca-82bd-400a59fae670",
-        "status": "M"
+        "status": [
+          "M",
+          "L"
+        ]
+      },
+      {
+        "id": "4e8a2448-78d6-46d2-90d5-174e453a8177",
+        "status": [
+          "V",
+          "S"
+        ]
       },
       {
         "id": "3e5a6126-fc6f-4185-8758-f96edaee6a40",
-        "status": "S"
+        "status": [
+          "M"
+        ]
+      }
+    ]
+  },
+  "54814d90-7133-4689-bf55-4475996d282e": {
+    "store": "telhanorte",
+    "products": [
+      {
+        "id": "4e8a2448-78d6-46d2-90d5-174e453a8177",
+        "status": [
+          "P"
+        ]
+      },
+      {
+        "id": "24eae30f-6b49-4f90-a5af-b1921b6c4d59",
+        "status": [
+          "E"
+        ]
+      },
+      {
+        "id": "59088a82-1db2-4053-a977-1e0c4fc5756a",
+        "status": [
+          "M"
+        ]
       }
     ]
   },
@@ -37,28 +61,21 @@
     "products": [
       {
         "id": "737c5e0d-40e7-4cea-b679-eb97455a313d",
-        "status": "E"
+        "status": [
+          "E"
+        ]
       },
       {
         "id": "91c158da-4826-478f-a285-c4536d31206a",
-        "status": "E"
+        "status": [
+          "E"
+        ]
       },
       {
         "id": "c06bc6cf-b06f-49e6-a0f6-16ba879a14af",
-        "status": "E"
-      }
-    ]
-  },
-  "54814d90-7133-4689-bf55-4475996d282e": {
-    "store": "telhanorte",
-    "products": [
-      {
-        "id": "24eae30f-6b49-4f90-a5af-b1921b6c4d59",
-        "status": "L"
-      },
-      {
-        "id": "59088a82-1db2-4053-a977-1e0c4fc5756a",
-        "status": "T"
+        "status": [
+          "E"
+        ]
       }
     ]
   }

@@ -25,39 +25,45 @@ function compareAndAccumulateDifference(file1, file2, accumulatedDifference) {
               "products": []
             };
           }
-          accumulatedDifference[storeId].products.push({
-            "id": productId,
-            "status": product1.finalStatus
-          });
+          const existingProductIndex = accumulatedDifference[storeId].products.findIndex(prod => prod.id === productId);
+          if (existingProductIndex !== -1) {
+            accumulatedDifference[storeId].products[existingProductIndex].status.push(product1.finalStatus);
+          } else {
+            accumulatedDifference[storeId].products.push({
+              "id": productId,
+              "status": [product1.finalStatus]
+            });
+          }
         }
+
         if (matchingProduct2 && product1.crawlingEnd && product1.crawlingStart && matchingProduct2.crawlingEnd && matchingProduct2.crawlingStart) {
           const diff1 = product1.crawlingEnd - product1.crawlingStart;
           const diff2 = matchingProduct2.crawlingEnd - matchingProduct2.crawlingStart;
           const diff = diff2 - diff1;
 
           if (diff !== 0) {
-            if (!accumulatedDifference.difference[storeId]) {
-              accumulatedDifference.difference[storeId] = {
+            if (!accumulatedDifference[storeId]) {
+              accumulatedDifference[storeId] = {
                 "store": store1.name,
                 "products": []
               };
-              accumulatedDifference.difference[storeId].products.push({
+            }
+            const existingProductIndex = accumulatedDifference[storeId].products.findIndex(prod => prod.id === productId);
+            if (existingProductIndex !== -1) {
+              accumulatedDifference[storeId].products[existingProductIndex].difference = diff;
+            } else {
+              accumulatedDifference[storeId].products.push({
                 "id": productId,
                 "difference": diff
               });
             }
-
           }
         }
-
-        if (!accumulatedDifference.difference[storeId]) {
-          accumulatedDifference.difference[storeId] = [];
-        }
-
       });
     }
   });
 }
+
 
 // Read the JSON files from the 'logs' directory
 const files = fs.readdirSync('./logs');
