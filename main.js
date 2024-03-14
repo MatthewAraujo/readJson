@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // Read the JSON file
-const data = fs.readFileSync('log3.json', 'utf8');
+const data = fs.readFileSync('./logs/log_2024-03-08T13_54_23.204Z.json', 'utf8');
 const dataDict = JSON.parse(data);
 
 // New JSON structure to store results
